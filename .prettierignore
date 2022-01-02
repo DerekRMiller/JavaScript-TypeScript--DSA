@@ -1,0 +1,5 @@
+_notes-not-public
+.gitignore
+.husky
+dist
+node_modules

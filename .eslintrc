@@ -1,0 +1,49 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["standard", "plugin:prettier/recommended"],
+  "overrides": [
+    {
+      "extends": ["plugin:@typescript-eslint/recommended"],
+      "files": ["**/*.ts"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint"],
+      "rules": {
+        "@typescript-eslint/no-non-null-assertion": "error"
+      }
+    },
+    {
+      "extends": ["plugin:json/recommended-with-comments"],
+      "files": ["**/*.json"],
+      "plugins": ["eslint-plugin-json"]
+    }
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "import/no-unresolved": [2, { "commonjs": true, "amd": true }],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "one-var": ["off", "consecutive"],
+    "semi": ["error", "always"],
+    "space-before-function-paren": ["error", "never"]
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "project": "./"
+      }
+    }
+  }
+}
