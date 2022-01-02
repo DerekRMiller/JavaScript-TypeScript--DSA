@@ -1,4 +1,3 @@
-// test
 export { HashTable } from './ts/HashTable';
 export { HashTableJs } from './js/HashTable';
 export { myHashTable } from './ts/myHashTable';
