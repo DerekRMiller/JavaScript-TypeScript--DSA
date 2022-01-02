@@ -1,4 +1,11 @@
 /* eslint-disable  @typescript-eslint/no-unused-vars */
+import { anyMatchingValues, maxSubArray } from './_challenges/arrays';
+import {
+  convertBinaryNumberToInteger,
+  myMergeTwoLinkedLists,
+  mySortMergeTwoLinkedLists
+} from './_challenges/linked-lists';
+
 import {
   myBubbleSort,
   myInsertionSort,
@@ -9,24 +16,12 @@ import {
   myTreeTraversal
 } from './algorithms';
 
-import { anyMatchingValues, findMaximumInSlidingWindow, maxSubArray } from './arrays';
-
-import { myDoublyLinkedList } from './doubly-linked-lists';
-
-import { myGraph } from './graphs';
-
-import { myHashTable } from './hash-tables';
-
-import {
-  convertBinaryNumberToInteger,
-  myLinkedList,
-  myMergeTwoLinkedLists,
-  mySortMergeTwoLinkedLists
-} from './linked-lists';
-
-import { myQueue, myStack } from './stacks-and-queues';
-
-import { myBinarySearchTree } from './trees';
+import { myDoublyLinkedList } from './data-structures/doubly-linked-lists';
+import { myGraph } from './data-structures/graphs';
+import { myHashTable } from './data-structures/hash-tables';
+import { myLinkedList } from './data-structures/linked-lists';
+import { myQueue, myStack } from './data-structures/stacks-and-queues';
+import { myBinarySearchTree } from './data-structures/trees';
 /* eslint-enable  @typescript-eslint/no-unused-vars */
 
 /* ——————————————————————————————————————————————————————————————------------ */
@@ -42,7 +37,6 @@ import { myBinarySearchTree } from './trees';
 
 /* -----------ARRAYS----------- */
 // anyMatchingValues();
-// findMaximumInSlidingWindow();
 // maxSubArray();
 
 /* --------DOUBLY LINKED LISTS-------- */
