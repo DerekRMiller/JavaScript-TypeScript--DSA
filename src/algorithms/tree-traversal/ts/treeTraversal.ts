@@ -1,5 +1,5 @@
 import util = require('util');
-import { NodeLR as Node } from '_shared';
+import { NodeLR as Node } from 'shared';
 
 class BST {
   root: Node | null;
@@ -130,6 +130,7 @@ export const myTreeTraversal = (): void => {
   const end = performance.now();
 
   console.log(`
+myTreeTraversal
 -----------------------------------------
 DFSInOrder()
 Execution time: ${end - start} ms
