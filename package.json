@@ -32,10 +32,8 @@
   "lint-staged": {
     "*.{ts,js,json}": "eslint --fix ./",
     "*.{ts,js,json,md}": "prettier --write ./",
-    "*.{ts,js}": [
-      "tsc",
-      "jest --colors"
-    ]
+    "*.{ts,js}": "tsc",
+    "*.ts": "jest --colors"
   },
   "main": "index.js",
   "name": "js-ts--data-structures-and-algorithms",

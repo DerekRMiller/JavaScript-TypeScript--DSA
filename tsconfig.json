@@ -37,13 +37,6 @@
     "target": "es6",
     "useDefineForClassFields": true
   },
-  "exclude": [
-    "**/node_modules",
-    "**/__tests__",
-    "**/public",
-    "**/dist",
-    "**/lib",
-    "**/lib-commonjs"
-  ],
+  "exclude": ["**/node_modules", "**/public", "**/dist", "**/lib", "**/lib-commonjs"],
   "include": ["./src/**/*"]
 }
