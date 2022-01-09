@@ -42,7 +42,7 @@
     },
     "import/resolver": {
       "typescript": {
-        "project": {}
+        "project": "./"
       }
     }
   }
