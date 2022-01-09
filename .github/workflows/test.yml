@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Lint (JS, TS & JSON)
+      - name: Lint
         run: npm run lint
 
       - name: Prettify
@@ -38,4 +38,4 @@ jobs:
         run: npm run type-check
 
       - name: Unit Test
-        run: npm run type-check
+        run: npm run test
