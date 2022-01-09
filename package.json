@@ -31,7 +31,11 @@
   "license": "ISC",
   "lint-staged": {
     "*.{ts,js,json}": "eslint --fix ./",
-    "*.{ts,js,json,md}": "prettier --write ./"
+    "*.{ts,js,json,md}": "prettier --write ./",
+    "*.{ts,js}": [
+      "tsc",
+      "jest --colors"
+    ]
   },
   "main": "index.js",
   "name": "js-ts--data-structures-and-algorithms",
@@ -43,9 +47,10 @@
     "lint": "eslint --fix ./",
     "prepare": "husky install",
     "start": "nodemon",
-    "test": "jest --colors --coverage",
+    "test": "jest --colors",
+    "test-all": "jest --colors --coverage",
     "test-watch": "jest --watch --colors",
-    "type-check": "tsc && tsc --build --clean",
+    "type-check": "tsc",
     "type-trace": "tsc --traceResolution"
   },
   "version": "1.0.0"
