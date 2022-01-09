@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "composite": true,
     "declaration": true,
     "declarationMap": true,
@@ -21,12 +21,16 @@
     "noLib": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "outDir": "./dist",
+    "outDir": "dist",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@shared/*": ["src/shared/*"]
+    },
     "preserveConstEnums": true,
     "pretty": true,
     "removeComments": true,
     "resolveJsonModule": true,
-    "rootDir": "./src",
+    "rootDir": "./",
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,

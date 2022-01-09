@@ -1,10 +1,11 @@
 /* eslint-disable  @typescript-eslint/no-unused-vars */
-import { anyMatchingValues, maxSubArray } from './_challenges/arrays';
+import { anyMatchingValues, maxSubArray } from '@src/_challenges/data-structures/arrays';
 import {
   convertBinaryNumberToInteger,
   myMergeTwoLinkedLists,
-  mySortMergeTwoLinkedLists
-} from './_challenges/linked-lists';
+  mySortMergeTwoLinkedLists,
+  myLinkedList
+} from '@src/_challenges/data-structures/linked-lists';
 
 import {
   myBubbleSort,
@@ -14,16 +15,15 @@ import {
   myFactorial,
   mySelectionSort,
   myTreeTraversal
-} from './algorithms';
+} from '@src/_challenges/algorithms';
 
-import { myDoublyLinkedList } from './data-structures/doubly-linked-lists';
-import { myGraph } from './data-structures/graphs';
-import { myHashTable } from './data-structures/hash-tables';
-import { myLinkedList } from './data-structures/linked-lists';
-import { myQueue, myStack } from './data-structures/stacks-and-queues';
-import { myBinarySearchTree } from './data-structures/trees';
+import { myDoublyLinkedList } from '@src/_challenges/data-structures/doubly-linked-lists';
+import { myGraph } from '@src/_challenges/data-structures/graphs';
+import { myHashTable } from '@src/_challenges/data-structures/hash-tables';
+import { myQueue, myStack } from '@src/_challenges/data-structures/stacks-and-queues';
+import { myBinarySearchTree } from '@src/_challenges/data-structures/trees';
+
 /* eslint-enable  @typescript-eslint/no-unused-vars */
-
 /* ——————————————————————————————————————————————————————————————------------ */
 
 /* -------------Algorithms------------ */

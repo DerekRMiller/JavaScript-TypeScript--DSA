@@ -1,4 +1,4 @@
-import { NodeN as Node } from 'shared';
+import { NodeN as Node } from '@shared/index';
 
 export class Stack {
   top: Node | null;

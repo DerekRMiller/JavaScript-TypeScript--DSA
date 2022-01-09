@@ -1,4 +1,4 @@
-import { NodeLR as Node } from 'shared';
+import { NodeLR as Node } from '@shared/index';
 
 export class BinarySearchTree {
   root: Node | null;
@@ -23,7 +23,7 @@ export class BinarySearchTree {
 
     while (true) {
       // if node already exists
-      if (newNode === temp) return undefined;
+      if (newNode.value === temp.value) return undefined;
 
       // if value less than root node
       if (newNode.value < temp.value) {

@@ -1,4 +1,4 @@
-import { NodeN as Node } from 'shared';
+import { NodeN as Node } from '@shared/index';
 
 export class Queue {
   first: Node | null;
