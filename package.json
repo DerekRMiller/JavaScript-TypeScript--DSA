@@ -1,13 +1,10 @@
 {
   "author": "Derek R. Miller",
   "dependencies": {
-    "jsdom": "^19.0.0",
-    "nodemon": "^2.0.14"
-  },
-  "description": "JS/TS Data Structures & Algorithms",
-  "devDependencies": {
+    "@types/jest": "^27.4.0",
     "@types/jsdom": "^16.2.14",
     "@types/node": "^16.11.12",
+    "@types/nodemon": "^1.19.1",
     "@typescript-eslint/eslint-plugin": "^5.8.1",
     "@typescript-eslint/parser": "^5.8.1",
     "eslint": "^7.32.0",
@@ -20,11 +17,17 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.2.0",
     "husky": "^7.0.4",
+    "jest": "^27.4.5",
+    "jsdom": "^19.0.0",
     "lint-staged": "^12.1.4",
+    "nodemon": "^2.0.14",
     "prettier": "2.5.1",
+    "ts-jest": "^27.1.2",
     "ts-node": "^10.4.0",
+    "tsconfig-paths": "^3.12.0",
     "typescript": "^4.5.4"
   },
+  "description": "JS/TS Data Structures & Algorithms",
   "license": "ISC",
   "lint-staged": {
     "*.{ts,js,json}": "eslint --fix ./",
@@ -39,8 +42,11 @@
     "format": "prettier --write ./",
     "lint": "eslint --fix ./",
     "prepare": "husky install",
-    "start": "NODE_PATH=./src nodemon src/index.ts",
-    "type-check": "tsc && tsc --build --clean"
+    "start": "nodemon",
+    "test": "jest --colors --coverage",
+    "test-watch": "jest --watch --colors",
+    "type-check": "tsc && tsc --build --clean",
+    "type-trace": "tsc --traceResolution"
   },
   "version": "1.0.0"
 }
