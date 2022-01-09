@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    name: Lint & Format Suite
+    name: Lint, Format & Test Suite
     runs-on: ubuntu-latest
 
     steps:
@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Lint (JS, TS & JSON)
+      - name: Lint
         run: npm run lint
 
       - name: Prettify
@@ -36,3 +36,6 @@ jobs:
 
       - name: Check types
         run: npm run type-check
+
+      - name: Unit Test
+        run: npm run test
