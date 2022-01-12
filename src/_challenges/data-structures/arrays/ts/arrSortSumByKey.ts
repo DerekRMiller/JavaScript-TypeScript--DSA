@@ -1,7 +1,7 @@
 /* 
   In a key value string array, sort and sum by key:
-  let arr = ['a:3', 'd:-2', 'f:4', 'e:1', 'c:9', 'b:0', 'c:7', 'd:5', 'b:12', 'f:-23'];
-  let result = ['a:3', 'b:12', 'c:16', 'd:3', 'e:1', 'f:-19'];
+  const arr = ['a:3', 'd:-2', 'f:4', 'e:1', 'c:9', 'b:0', 'c:7', 'd:5', 'b:12', 'f:-23'];
+  const newArr = ['a:3', 'b:12', 'c:16', 'd:3', 'e:1', 'f:-19'];
 */
 
 import util = require('util');
