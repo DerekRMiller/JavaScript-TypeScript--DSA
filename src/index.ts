@@ -1,5 +1,10 @@
 /* eslint-disable  @typescript-eslint/no-unused-vars */
-import { anyMatchingValues, maxSubArray } from '@src/_challenges/data-structures/arrays';
+import {
+  anyMatchingValues,
+  maxSubArray,
+  myArrSortSumByKey
+} from '@src/_challenges/data-structures/arrays';
+
 import {
   convertBinaryNumberToInteger,
   myMergeTwoLinkedLists,
@@ -38,6 +43,7 @@ import { myBinarySearchTree } from '@src/_challenges/data-structures/trees';
 /* -----------ARRAYS----------- */
 // anyMatchingValues();
 // maxSubArray();
+myArrSortSumByKey();
 
 /* --------DOUBLY LINKED LISTS-------- */
 // myDoublyLinkedList();
@@ -52,7 +58,7 @@ import { myBinarySearchTree } from '@src/_challenges/data-structures/trees';
 // convertBinaryNumberToInteger();
 // myLinkedList();
 // myMergeTwoLinkedLists();
-mySortMergeTwoLinkedLists();
+// mySortMergeTwoLinkedLists();
 
 /* ----------Stacks & Queues---------- */
 // myQueue();
