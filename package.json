@@ -31,9 +31,7 @@
   "license": "ISC",
   "lint-staged": {
     "*.{ts,js,json}": "eslint --fix ./",
-    "*.{ts,js,json,md}": "prettier --write ./",
-    "*.{ts,js}": "tsc",
-    "*.ts": "jest --colors"
+    "*.{ts,js,json,md}": "prettier --write ./"
   },
   "main": "index.js",
   "name": "js-ts--data-structures-and-algorithms",
@@ -48,7 +46,7 @@
     "test": "jest --colors",
     "test-all": "jest --colors --coverage",
     "test-watch": "jest --watch --colors",
-    "type-check": "tsc",
+    "type-check": "tsc --noEmit",
     "type-trace": "tsc --traceResolution"
   },
   "version": "1.0.0"
