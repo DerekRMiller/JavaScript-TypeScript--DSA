@@ -2,8 +2,8 @@ import util = require('util');
 import { quickSort } from '@src/algorithms';
 
 export const myQuickSort = (): void => {
-  const arr = [4, 6, 1, 7, 3, 2, 5],
-    start = performance.now();
+  const arr = [4, 6, 1, 7, 3, 2, 5];
+  const start = performance.now();
   quickSort(arr);
   const end = performance.now();
 

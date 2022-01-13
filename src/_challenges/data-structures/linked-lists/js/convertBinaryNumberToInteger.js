@@ -19,12 +19,12 @@ const getDecimalValue = (head) => {
 
 // binary 101  = integer 5
 export const convertBinaryNumberToIntegerJs = () => {
-  const util = require('util'),
-    node3 = new Node(1),
-    node2 = new Node(0, node3),
-    node1 = new Node(1, node2),
-    linkedList = node1,
-    start = performance.now();
+  const util = require('util');
+  const node3 = new Node(1);
+  const node2 = new Node(0, node3);
+  const node1 = new Node(1, node2);
+  const linkedList = node1;
+  const start = performance.now();
   getDecimalValue(linkedList);
   const end = performance.now();
 

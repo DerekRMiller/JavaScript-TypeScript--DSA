@@ -1,8 +1,8 @@
 import { LinkedListJs } from '@src/data-structures/linked-lists';
 
 export const myLinkedListJs = () => {
-  const util = require('util'),
-    myLinkedList = new LinkedListJs(1);
+  const util = require('util');
+  const myLinkedList = new LinkedListJs(1);
   myLinkedList.push(2);
   myLinkedList.push(3);
 

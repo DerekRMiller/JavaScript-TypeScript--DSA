@@ -1,8 +1,8 @@
 import util = require('util');
 
 const maxSubArr = (numbers: number[]): number => {
-  let prev = 0,
-    max = 0;
+  let prev = 0;
+  let max = 0;
 
   for (let i = 0; i < numbers.length; i++) {
     prev = Math.max(prev + numbers[i], numbers[i]);

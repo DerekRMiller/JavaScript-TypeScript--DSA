@@ -13,8 +13,8 @@ class Node {
 }
 
 const getDecimalValue = (head: Node | null): number => {
-  let current = head,
-    string = '';
+  let current = head;
+  let string = '';
 
   while (current) {
     // add all the values as string to `str` variable
@@ -28,11 +28,11 @@ const getDecimalValue = (head: Node | null): number => {
 
 // binary 101  = integer 5
 export const convertBinaryNumberToInteger = (): void => {
-  const node3 = new Node(1),
-    node2 = new Node(0, node3),
-    node1 = new Node(1, node2),
-    linkedList = node1,
-    start = performance.now();
+  const node3 = new Node(1);
+  const node2 = new Node(0, node3);
+  const node1 = new Node(1, node2);
+  const linkedList = node1;
+  const start = performance.now();
 
   getDecimalValue(linkedList);
 

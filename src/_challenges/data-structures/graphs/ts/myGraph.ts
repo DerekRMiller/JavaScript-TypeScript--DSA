@@ -16,8 +16,8 @@ C
 */
 
 export const myGraph = (): void => {
-  const myGraph = new Graph(),
-    start = performance.now();
+  const myGraph = new Graph();
+  const start = performance.now();
 
   // Add vertex
   myGraph.addVertex('A');

@@ -7,8 +7,8 @@ import { TreeTraversalJs } from '@src/algorithms/';
 */
 
 export const myTreeTraversalJs = () => {
-  const util = require('util'),
-    myBST = new TreeTraversalJs();
+  const util = require('util');
+  const myBST = new TreeTraversalJs();
 
   myBST.insert(47);
   myBST.insert(21);

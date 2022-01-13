@@ -51,8 +51,8 @@ export class TreeTraversal {
   // Breadth First Search
   BFS(): number[] {
     let currentNode = this.root as Node;
-    const queue: Node[] = [],
-      result: number[] = [];
+    const queue: Node[] = [];
+    const result: number[] = [];
 
     queue.push(currentNode);
 

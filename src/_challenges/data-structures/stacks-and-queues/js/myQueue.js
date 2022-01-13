@@ -1,8 +1,8 @@
 import { QueueJs } from '@src/data-structures/stacks-and-queues';
 
 export const myQueueJs = () => {
-  const util = require('util'),
-    myQueue = new QueueJs(1);
+  const util = require('util');
+  const myQueue = new QueueJs(1);
   myQueue.enqueue(2);
   myQueue.enqueue(3);
 

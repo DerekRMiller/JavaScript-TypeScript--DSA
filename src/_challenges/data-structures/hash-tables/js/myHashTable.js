@@ -1,9 +1,9 @@
 import { HashTable } from '@src/data-structures/hash-tables';
 
 export const myHashTableJs = () => {
-  const util = require('util'),
-    myHashTable = new HashTable(),
-    start = performance.now();
+  const util = require('util');
+  const myHashTable = new HashTable();
+  const start = performance.now();
   // set some items
   myHashTable.set('compressor', 24);
   myHashTable.set('eq', 40);

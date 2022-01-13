@@ -26,13 +26,20 @@
   },
   "rules": {
     "import/no-unresolved": [2, { "commonjs": true, "amd": true }],
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+      }
+    ],
     "prettier/prettier": [
       "error",
       {
         "endOfLine": "auto"
       }
     ],
-    "one-var": ["off", "consecutive"],
+    "one-var": ["error", "never"],
     "semi": ["error", "always"],
     "space-before-function-paren": ["error", "never"]
   },
