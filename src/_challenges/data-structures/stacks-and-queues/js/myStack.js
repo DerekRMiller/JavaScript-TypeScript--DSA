@@ -1,8 +1,8 @@
 import { StackJs } from '@src/data-structures/stacks-and-queues';
 
 export const myStackJs = () => {
-  const myStack = new StackJs(1),
-    util = require('util');
+  const myStack = new StackJs(1);
+  const util = require('util');
   myStack.push(2);
   myStack.push(3);
 

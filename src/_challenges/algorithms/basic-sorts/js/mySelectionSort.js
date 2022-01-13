@@ -1,9 +1,9 @@
 import { selectionSortJs } from '@src/algorithms';
 
 export const mySelectionSortJs = () => {
-  const util = require('util'),
-    arr = [4, 2, 6, 5, 1, 3],
-    start = performance.now();
+  const util = require('util');
+  const arr = [4, 2, 6, 5, 1, 3];
+  const start = performance.now();
   selectionSortJs(arr);
   const end = performance.now();
 

@@ -1,8 +1,8 @@
 // helper function
 const merge = (array1, array2) => {
   const combined = [];
-  let i = 0,
-    j = 0;
+  let i = 0;
+  let j = 0;
 
   // initial combined array (compare array values and push lesser value to combined array)
   while (i < array1.length && j < array2.length) {
@@ -31,9 +31,9 @@ const merge = (array1, array2) => {
 export const mergeSortJs = (array) => {
   if (array.length === 1) return array;
 
-  const mid = Math.floor(array.length / 2),
-    left = array.slice(0, mid),
-    right = array.slice(mid);
+  const mid = Math.floor(array.length / 2);
+  const left = array.slice(0, mid);
+  const right = array.slice(mid);
 
   return merge(mergeSortJs(left), mergeSortJs(right));
 };

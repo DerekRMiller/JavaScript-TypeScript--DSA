@@ -13,8 +13,7 @@ export class LinkedListJs {
     this.length = 1;
   }
 
-  // O(1)
-  // add item to end of list
+  // add item to end of list :: O(1)
   push(value) {
     const newNode = new Node(value);
 
@@ -30,13 +29,12 @@ export class LinkedListJs {
     return this;
   }
 
-  // O(n)
-  // remove end of linked list
+  // remove end of linked list :: O(n)
   pop() {
     if (!this.head) return undefined;
 
-    let temp = this.head,
-      pre = this.head;
+    let temp = this.head;
+    let pre = this.head;
 
     while (temp.next) {
       pre = temp;
@@ -55,8 +53,7 @@ export class LinkedListJs {
     return temp;
   }
 
-  // add item to beginning of list
-  // O(1)
+  // add item to beginning of list :: O(1)
   unshift(value) {
     const newNode = new Node(value);
 
@@ -72,8 +69,7 @@ export class LinkedListJs {
     return this;
   }
 
-  // remove item from beginning of list
-  // O(1)
+  // remove item from beginning of list :: O(1)
   shift() {
     if (!this.head) return undefined;
 
@@ -91,8 +87,7 @@ export class LinkedListJs {
     return temp;
   }
 
-  // get node at particular index
-  // O(n)
+  // get node at particular index :: O(n)
   get(index) {
     if (index < 0 || index >= this.length) {
       return undefined;
@@ -107,8 +102,7 @@ export class LinkedListJs {
     return temp;
   }
 
-  // set node value at particular index
-  // O(1)
+  // set node value at particular index :: O(1)
   set(index, value) {
     const temp = this.get(index);
 
@@ -121,14 +115,13 @@ export class LinkedListJs {
   }
 
   // insert a node value by its index
-  // O(n) ????
   insert(index, value) {
     if (index === 0) return this.unshift(value);
     if (index === this.length) return this.push(value);
     if (index < 0 || index > this.length) return false;
 
-    const newNode = new Node(value),
-      temp = this.get(index - 1);
+    const newNode = new Node(value);
+    const temp = this.get(index - 1);
 
     newNode.next = temp.next;
     temp.next = newNode;
@@ -144,8 +137,8 @@ export class LinkedListJs {
     if (index === this.length) return this.pop();
     if (index < 0 || index > this.length) return false;
 
-    const before = this.get(index - 1),
-      temp = before.next;
+    const before = this.get(index - 1);
+    const temp = before.next;
 
     before.next = temp.next;
     temp.next = null;
@@ -155,14 +148,14 @@ export class LinkedListJs {
     return temp;
   }
 
-  // reverse the list O(n)
+  // reverse the list ::  O(n)
   reverse() {
     let temp = this.head;
     this.head = this.tail;
     this.tail = temp;
 
-    let next = temp.next,
-      prev = null;
+    let next = temp.next;
+    let prev = null;
 
     for (let i = 0; i < this.length; i++) {
       next = temp.next;

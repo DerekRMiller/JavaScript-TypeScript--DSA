@@ -14,9 +14,9 @@ C
 */
 
 export const myGraphJs = () => {
-  const util = require('util'),
-    myGraph = new GraphJs(),
-    start = performance.now();
+  const util = require('util');
+  const myGraph = new GraphJs();
+  const start = performance.now();
 
   // Add vertex
   myGraph.addVertex('A');

@@ -32,8 +32,8 @@ export class LinkedList {
   pop(): Node | undefined {
     if (!this.head) return undefined;
 
-    let temp = this.head,
-      pre = this.head;
+    let temp = this.head;
+    let pre = this.head;
 
     while (temp.next) {
       pre = temp;
@@ -103,7 +103,7 @@ export class LinkedList {
     return temp;
   }
 
-  // (set node value by index) :: 0(n)
+  // (set node value by index) :: 0(1)
   set(index: number, value: number): boolean {
     const temp = this.get(index);
 
@@ -115,14 +115,14 @@ export class LinkedList {
     return false;
   }
 
-  // (insert node at index) :: 0(n)
+  // (insert node at index) :: 0(1)
   insert(index: number, value: number): boolean | this {
     if (index === 0) return this.unshift(value);
     if (index === this.length) return this.push(value);
     if (index < 0 || index > this.length) return false;
 
-    const newNode = new Node(value),
-      temp = this.get(index - 1);
+    const newNode = new Node(value);
+    const temp = this.get(index - 1);
 
     if (temp) {
       newNode.next = temp.next;
@@ -155,14 +155,14 @@ export class LinkedList {
     return false;
   }
 
-  // (reverse linked list) :: O(1)
+  // (reverse linked list) :: O(n)
   reverse(): this {
     let temp = this.head;
     this.head = this.tail;
     this.tail = temp;
 
-    let next = temp?.next,
-      prev: Node | null = null;
+    let next = temp?.next;
+    let prev: Node | null = null;
 
     for (let i = 0; i < this.length; i++) {
       if (temp !== null) {

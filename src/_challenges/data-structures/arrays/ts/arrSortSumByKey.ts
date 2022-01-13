@@ -6,19 +6,18 @@
 
 import util = require('util');
 
-const arrSortSumByKey = (arr: string[]): string[] => {
-  const obj: { [key: string]: number } = {},
-    newArr: string[] = [];
+const arrSortSumByKey = (arr: string[]) => {
+  const obj: { [key: string]: number } = {};
+  const newArr: string[] = [];
 
   for (let i = 0; i < arr.length; i++) {
-    const pair = arr[i].split(':'),
-      key: string = pair[0],
-      value = parseInt(pair[1]);
+    const pair = arr[i].split(':');
+    const value = parseInt(pair[1]);
 
-    if (key in obj) {
-      obj[key] += value;
+    if (pair[0] in obj) {
+      obj[pair[0]] += value;
     } else {
-      obj[key] = value;
+      obj[pair[0]] = value;
     }
   }
 
@@ -32,10 +31,10 @@ const arrSortSumByKey = (arr: string[]): string[] => {
 };
 
 export const myArrSortSumByKey = () => {
-  const arr: string[] = ['a:3', 'd:-2', 'f:4', 'e:1', 'c:9', 'b:0', 'c:7', 'd:5', 'b:12', 'f:-23'],
-    start = performance.now(),
-    arrSort = arrSortSumByKey(arr),
-    end = performance.now();
+  const arr: string[] = ['a:3', 'd:-2', 'f:4', 'e:1', 'c:9', 'b:0', 'c:7', 'd:5', 'b:12', 'f:-23'];
+  const start = performance.now();
+  const arrSort = arrSortSumByKey(arr);
+  const end = performance.now();
 
   console.log(`
 ------------------------------------------------

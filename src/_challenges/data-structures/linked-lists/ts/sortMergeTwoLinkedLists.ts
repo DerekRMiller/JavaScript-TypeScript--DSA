@@ -39,8 +39,8 @@ const sortMergeTwoLinkedLists = (list1: LinkedList, list2: LinkedList): LinkedLi
 };
 
 export const mySortMergeTwoLinkedLists = (): void => {
-  const list1 = new LinkedList(6),
-    list2 = new LinkedList(3);
+  const list1 = new LinkedList(6);
+  const list2 = new LinkedList(3);
 
   list1.push(5);
   list1.push(2);
@@ -48,9 +48,9 @@ export const mySortMergeTwoLinkedLists = (): void => {
   list2.push(1);
   list2.push(4);
 
-  const start = performance.now(),
-    arr = sortMergeTwoLinkedLists(list1, list2),
-    end = performance.now();
+  const start = performance.now();
+  const arr = sortMergeTwoLinkedLists(list1, list2);
+  const end = performance.now();
 
   console.log(`
 sortMergeTwoLinkedLists({6,5,2}, {3,1,4})

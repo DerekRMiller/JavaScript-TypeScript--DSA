@@ -2,8 +2,8 @@ import util = require('util');
 import { insertionSort } from '@src/algorithms';
 
 export const myInsertionSort = (): void => {
-  const arr = [4, 2, 6, 5, 1, 3],
-    start = performance.now();
+  const arr = [4, 2, 6, 5, 1, 3];
+  const start = performance.now();
   insertionSort(arr);
   const end = performance.now();
 

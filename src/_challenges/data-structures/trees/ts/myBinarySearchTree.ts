@@ -2,8 +2,8 @@ import util = require('util');
 import { BinarySearchTree } from '@src/data-structures/trees/';
 
 export const myBinarySearchTree = (): void => {
-  const myBST = new BinarySearchTree(),
-    start = performance.now();
+  const myBST = new BinarySearchTree();
+  const start = performance.now();
 
   myBST.insert(7);
   myBST.insert(2);

@@ -1,8 +1,8 @@
 import { DoublyLinkedListJs } from '@src/data-structures/doubly-linked-lists';
 
 export const myDoublyLinkedListJs = () => {
-  const util = require('util'),
-    myDoublyLinkedList = new DoublyLinkedListJs(1);
+  const util = require('util');
+  const myDoublyLinkedList = new DoublyLinkedListJs(1);
   myDoublyLinkedList.push(2);
   myDoublyLinkedList.push(3);
 

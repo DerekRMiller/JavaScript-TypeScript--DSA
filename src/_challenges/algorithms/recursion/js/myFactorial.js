@@ -1,8 +1,8 @@
 import { factorialJs } from '@src/algorithms';
 
 export const myFactorialJs = () => {
-  const util = require('util'),
-    start = performance.now();
+  const util = require('util');
+  const start = performance.now();
   factorialJs(4);
   const end = performance.now();
 

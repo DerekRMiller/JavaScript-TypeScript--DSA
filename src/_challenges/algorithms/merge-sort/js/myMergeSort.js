@@ -1,9 +1,9 @@
 import { mergeSortJs } from '@src/algorithms';
 
 export const myMergeSortJs = () => {
-  const util = require('util'),
-    arr = [15, 7, 9, 12, 1, 5, 2, 9, 24, 54],
-    start = performance.now();
+  const util = require('util');
+  const arr = [15, 7, 9, 12, 1, 5, 2, 9, 24, 54];
+  const start = performance.now();
   mergeSortJs(arr);
   const end = performance.now();
 

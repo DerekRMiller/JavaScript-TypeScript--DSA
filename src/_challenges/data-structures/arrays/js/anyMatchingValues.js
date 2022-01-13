@@ -34,11 +34,11 @@ const itemInCommonObject = (arr1, arr2) => {
 /* eslint-enable one-var */
 
 export const anyMatchingValuesJs = () => {
-  const util = require('util'),
-    arrays = [
-      [1, 3, 5],
-      [2, 4, 5]
-    ];
+  const util = require('util');
+  const arrays = [
+    [1, 3, 5],
+    [2, 4, 5]
+  ];
   let result = false;
 
   // Show timing results for both functions
