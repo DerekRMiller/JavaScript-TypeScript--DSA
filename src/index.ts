@@ -2,7 +2,8 @@
 import {
   anyMatchingValues,
   maxSubArray,
-  myArrSortSumByKey
+  myArrSortSumByKey,
+  myTwoSum
 } from '@src/_challenges/data-structures/arrays';
 
 import {
@@ -23,10 +24,22 @@ import {
 } from '@src/_challenges/algorithms';
 
 import { myDoublyLinkedList } from '@src/_challenges/data-structures/doubly-linked-lists';
+
 import { myGraph } from '@src/_challenges/data-structures/graphs';
+
 import { myHashTable } from '@src/_challenges/data-structures/hash-tables';
-import { myQueue, myStack } from '@src/_challenges/data-structures/stacks-and-queues';
-import { myBinarySearchTree, myMaximumBinaryTree } from '@src/_challenges/data-structures/trees';
+
+import {
+  myQueue,
+  myStack,
+  validParentheses
+} from '@src/_challenges/data-structures/stacks-and-queues';
+
+import {
+  myBinarySearchTree,
+  myMaximumBinaryTree,
+  reverseBinarySearchTree
+} from '@src/_challenges/data-structures/trees';
 
 /* eslint-enable  @typescript-eslint/no-unused-vars */
 /* ——————————————————————————————————————————————————————————————------------ */
@@ -44,6 +57,7 @@ import { myBinarySearchTree, myMaximumBinaryTree } from '@src/_challenges/data-s
 // anyMatchingValues();
 // maxSubArray();
 // myArrSortSumByKey();
+// myTwoSum();
 
 /* --------DOUBLY LINKED LISTS-------- */
 // myDoublyLinkedList();
@@ -63,7 +77,9 @@ import { myBinarySearchTree, myMaximumBinaryTree } from '@src/_challenges/data-s
 /* ----------Stacks & Queues---------- */
 // myQueue();
 // myStack();
+// validParentheses();
 
 /* ---------------TREES--------------- */
 // myBinarySearchTree();
-myMaximumBinaryTree();
+// myMaximumBinaryTree();
+reverseBinarySearchTree();

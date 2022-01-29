@@ -3,24 +3,19 @@ import { BinarySearchTreeJs } from '@src/data-structures/trees';
 export const myBinarySearchTreeJs = () => {
   const util = require('util');
   const myBST = new BinarySearchTreeJs();
+  const nodeArr = [7, 2, 1, 5, 10, 12, 9];
+
+  nodeArr.forEach((num) => {
+    myBST.insert(num);
+  });
+
   const start = performance.now();
-
-  myBST.insert(7);
-  myBST.insert(2);
-  myBST.insert(1);
-  myBST.insert(5);
-  myBST.insert(10);
-  myBST.insert(12);
-  myBST.insert(9);
-
   myBST.contains(5);
-
   myBST.minValueNode(myBST.root);
-
   const end = performance.now();
 
   console.log(`
-myBST.insert, myBST.contains & myBST.minValueNode
+myBST.contains & myBST.minValueNode
 --------------------------------------------------------
 Execution time: ${end - start} ms
 --------------------------------------------------------
