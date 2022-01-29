@@ -32,10 +32,9 @@ export const convertBinaryNumberToInteger = (): void => {
   const node2 = new Node(0, node3);
   const node1 = new Node(1, node2);
   const linkedList = node1;
+
   const start = performance.now();
-
   getDecimalValue(linkedList);
-
   const end = performance.now();
 
   console.log(`
