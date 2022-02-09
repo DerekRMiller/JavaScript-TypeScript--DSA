@@ -155,6 +155,20 @@ export class LinkedList {
     return false;
   }
 
+  middle(): Node | null | undefined {
+    let slow = this.get(0);
+    let fast = slow;
+
+    while (fast && fast.next) {
+      if (slow) {
+        slow = slow.next;
+      }
+      fast = fast.next.next;
+    }
+
+    return slow;
+  }
+
   // (reverse linked list) :: O(n)
   reverse(): this {
     let temp = this.head;
@@ -173,6 +187,12 @@ export class LinkedList {
       }
     }
 
+    return this;
+  }
+
+  // add sort
+
+  sort(): this {
     return this;
   }
 }
