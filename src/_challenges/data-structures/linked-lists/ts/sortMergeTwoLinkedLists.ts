@@ -2,6 +2,8 @@ import util = require('util');
 import { LinkedList } from '@src/data-structures/linked-lists';
 
 const sortMergeTwoLinkedLists = (list1: LinkedList, list2: LinkedList): LinkedList => {
+  // TODO: add edge cases
+
   const arr: number[] = [];
 
   if (list1.head) {

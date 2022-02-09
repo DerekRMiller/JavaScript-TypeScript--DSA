@@ -3,6 +3,8 @@ import {
   anyMatchingValues,
   maxSubArray,
   myArrSortSumByKey,
+  myMergeArrays,
+  myStrings,
   myTwoSum
 } from '@src/_challenges/data-structures/arrays';
 
@@ -10,7 +12,8 @@ import {
   convertBinaryNumberToInteger,
   myMergeTwoLinkedLists,
   mySortMergeTwoLinkedLists,
-  myLinkedList
+  myLinkedList,
+  sortLinkedList
 } from '@src/_challenges/data-structures/linked-lists';
 
 import {
@@ -41,15 +44,17 @@ import {
   reverseBinarySearchTree
 } from '@src/_challenges/data-structures/trees';
 
+import { myPlayground } from '@src/__playground/playground';
+
 /* eslint-enable  @typescript-eslint/no-unused-vars */
 /* ——————————————————————————————————————————————————————————————------------ */
 
 /* -------------Algorithms------------ */
 // myBubbleSort();
+// myFactorial();
 // myInsertionSort();
 // myMergeSort();
 // myQuickSort();
-// myFactorial();
 // mySelectionSort();
 // myTreeTraversal();
 
@@ -57,6 +62,8 @@ import {
 // anyMatchingValues();
 // maxSubArray();
 // myArrSortSumByKey();
+// myMergeArrays();
+// myStrings();
 // myTwoSum();
 
 /* --------DOUBLY LINKED LISTS-------- */
@@ -73,6 +80,7 @@ import {
 // myLinkedList();
 // myMergeTwoLinkedLists();
 // mySortMergeTwoLinkedLists();
+// sortLinkedList();
 
 /* ----------Stacks & Queues---------- */
 // myQueue();
@@ -83,3 +91,6 @@ import {
 // myBinarySearchTree();
 // myMaximumBinaryTree();
 reverseBinarySearchTree();
+
+/* ---------------Playground--------------- */
+// myPlayground();
