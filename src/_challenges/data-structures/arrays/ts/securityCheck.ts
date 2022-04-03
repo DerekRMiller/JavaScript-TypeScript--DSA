@@ -154,7 +154,7 @@ export const mySecurityCheck = (): void => {
     const end = performance.now();
 
     console.log(`>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-( INPUT )________________________________________________________
+( badgeRecords${i + 1} )________________________________________________
 ${util.inspect(e, false, null, true)}
 ( OUTPUT )_______________________________________________________
 Time: ${end - start} ms
