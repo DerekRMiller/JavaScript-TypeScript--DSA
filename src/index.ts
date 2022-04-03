@@ -4,6 +4,7 @@ import {
   maxSubArray,
   myArrSortSumByKey,
   myMergeArrays,
+  mySecurityCheck,
   myStrings,
   myTwoSum
 } from '@src/_challenges/data-structures/arrays';
@@ -60,6 +61,7 @@ import { myPlayground } from '@src/__playground/playground';
 
 /* -----------ARRAYS----------- */
 // anyMatchingValues();
+mySecurityCheck();
 // maxSubArray();
 // myArrSortSumByKey();
 // myMergeArrays();
@@ -90,7 +92,7 @@ import { myPlayground } from '@src/__playground/playground';
 /* ---------------TREES--------------- */
 // myBinarySearchTree();
 // myMaximumBinaryTree();
-reverseBinarySearchTree();
+// reverseBinarySearchTree();
 
 /* ---------------Playground--------------- */
 // myPlayground();

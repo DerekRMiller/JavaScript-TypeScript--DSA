@@ -2,6 +2,7 @@ import util = require('util');
 import { NodeLR } from '@shared/index';
 import { BinarySearchTree } from '@src/data-structures/trees/';
 
+// dfs version
 const reverse = (node: NodeLR | null): NodeLR | undefined => {
   if (!node) return;
 
